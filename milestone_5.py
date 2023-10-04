@@ -11,6 +11,13 @@ class Hangman:
         self.list_of_guesses = []
 
     def check_guess(self,guess):
+        """
+        This function checks if the user-defined guess (a letter) is in the word then responds accordingly
+
+        If the letter is in the word, then it will print the location of the letter that appears in the word and 
+        reduces number of letters to be guessed remaining accordingly. 
+        However, if the letter is incorrectly guessed then the number of lives is reduced for every incorrect guess.
+        """
         guess = guess.lower()
         if guess in self.word:
             print(f'Good guess! {guess} is in the word.')
@@ -25,6 +32,13 @@ class Hangman:
             print(f'You have {self.num_lives} lives left.')
 
     def ask_for_input(self):
+        """
+        This function asks the user to guess a letter of the hidden word
+
+        The purpose of this function is to ensure the user chooses appropriate characters. It uses if statements
+        to check that their inputs is from the alphabet and is singular. It also ensures the user doesn't select 
+        a previously chosen letter and lose a life for it.
+        """
         while self.num_lives > 0 and self.num_letters > 0:
             guess = input('Guess a letter: ')
             if (not guess.isalpha()) or len(guess) != 1:
