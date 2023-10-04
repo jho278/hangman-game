@@ -5,12 +5,12 @@ word_list = ['apple','orange','tomato','grapes','dragon fruit']
 print(word_list)
 
 # Create random word using choice method 
-word = random.choice(word_list)
-print(word)
+hidden_word = random.choice(word_list)
+print(hidden_word)
 
 def check_guess(guess):
     guess = guess.lower()
-    if guess in word:
+    if guess in hidden_word:
         print(f'Good guess! {guess} is in the word.')
     else:
         print(f'Sorry, {guess} is not in the word. Try again.')
