@@ -36,7 +36,8 @@ class Hangman:
                 self.check_guess(guess)
                 self.list_of_guesses.append(guess)
             
-words = ['doggo','elephant']
-play_game = Hangman(words)
+word_list = ['doggo','elephant']
+num_lives = 5
+play_game = Hangman(word_list,num_lives)
 print(play_game.ask_for_input())
 
