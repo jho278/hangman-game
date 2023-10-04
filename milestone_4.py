@@ -17,10 +17,12 @@ class Hangman:
             for index,letter in enumerate(self.word): # C A T
                 if guess in letter:
                     self.word_guessed[index] = guess
-            self.num_letters -= 1
-            print(f'{self.word_guessed}')
+                    self.num_letters -= 1
+            print(f'{self.word_guessed} and {self.num_letters}')
         else:
+            self.num_lives -= 1
             print(f'Sorry, {guess} is not in the word. Try again.')
+            print(f'You have {self.num_lives} lives left.')
 
     def ask_for_input(self):
         print(self.word)
@@ -34,7 +36,7 @@ class Hangman:
                 self.check_guess(guess)
                 self.list_of_guesses.append(guess)
             
-words = ['dog','elephant']
+words = ['doggo','elephant']
 play_game = Hangman(words)
-print(play_game.ask_for_input(),play_game.check_guess())
+print(play_game.ask_for_input())
 

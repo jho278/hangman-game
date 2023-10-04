@@ -1,6 +1,7 @@
 # My Hangman project
 - This Hangman game is a simple word guessing game where players try to guess the hidden word by selecting one letter at a time.
-- The aim of the project is to demonstrate my ability to apply Python principles to create fun programs.
+- The aim of the project is to demonstrate my ability to apply Python principles like creating classes and functions to create fun programs in a manner readability to other developers.
+- So far, I have learnt to add temporary print statements in for loops and if statements to check the outputs of the program.
 
 ## Installation instructions
 - I am using Visual Studio Code with the Python 3.11.5 as the interpreter and Miniconda as my minimal package manager. I import additional packages to run the program. They are:
@@ -9,13 +10,15 @@
 ## Usage instructions
 Run this line of code below to initiate the Hangman project  
 
-`python milestone_3.py` 
+`cd hangman-game`: Make sure you change the directory to the hangman-game folder  
+`python milestone_4.py`: In your terminal (using gitbas here), run the following code
 
-You will be prompted to guess the letter. The program will respond if you're choice is in the word.
+You will be prompted to guess the letter. The program will respond based on your choice.
  
 ## File structure of the project
 - milestone_2.py: Draft program code
 - milestone_3.py: Refactoring the program code for readability
+- milestone_4.py: Class creation and error-checks with print statements
 - README.md: Provides project context
 
 ## License information
